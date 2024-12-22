@@ -1,0 +1,74 @@
+body {
+	margin: 0;
+	font-family: "Red Hat Text", sans-serif;
+	background-image: url("./images/bcg.jpg"); /* Lien vers l'image */
+	background-repeat: no-repeat; /* Empêche la répétition */
+	background-size: cover; /* L'image couvre toute la zone */
+	background-position: center; /* Centrage de l'image */
+	background-color: hsl(234, 17%, 12%); /* Couleur de secours */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.countdown-container {
+	text-align: center;
+	padding: 20px;
+}
+
+h1 {
+	margin-bottom: 90px;
+	font-size: 1.8rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: hsl(237, 18%, 59%);
+}
+
+.countdown {
+	display: flex;
+	gap: 15px;
+	justify-content: center;
+	flex-wrap: wrap; /* Permet d'être responsive */
+}
+
+.time-box {
+	background: hsl(236, 21%, 26%);
+	padding: 15px 10px;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	width: 80px;
+}
+
+.time {
+	display: block;
+	font-size: 2rem;
+	font-weight: 700;
+	color: hsl(345, 95%, 68%);
+}
+
+.label {
+	font-size: 0.9rem;
+	margin-top: 5px;
+	text-transform: uppercase;
+	color: hsl(237, 18%, 59%);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+	h1 {
+		font-size: 1.5rem;
+	}
+	.time-box {
+		width: 70px;
+		padding: 10px;
+	}
+	.time {
+		font-size: 1.5rem;
+	}
+	.label {
+		font-size: 0.8rem;
+	}
+}
